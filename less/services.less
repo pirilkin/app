@@ -1,0 +1,44 @@
+.services {
+    &-card {
+        text-align: center;
+
+        &:hover &__circle {
+            color: @white;
+            background: @red;
+        }
+
+        &__circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 29px;
+            font-size: 35px;
+            color: @red;
+            transition: 0.7s;
+            // &:hover{
+            //     color: @white;
+            //     background: @red;
+            // }
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: @font-color;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        &__subtitle {
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-size: 14px;
+            color: @font-color;
+            line-height: 24px;
+        }
+    }
+}

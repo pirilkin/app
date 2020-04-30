@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserat";
+    font-weight: normal;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.title{
+  text-transform: uppercase;
+  position: relative;
+  font-size: 20px; 
+  color: @font-color;
+  margin-bottom: 61px;  
+  text-align: center;
+  font-weight: 700;
+  &:after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background: @font-color;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30px;
+  }
+}
+.subtitle{
+    text-align: center;
+    color: @font-color;
+    font-family: 'Robotos Slab';
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+section{
+    padding: 100px 0;
+}
+
+
+@import './params/mix.less';
+@import './params/var.less';
+@import './header.less';
+@import './services.less';
+@import './about.less';
