@@ -1,5 +1,8 @@
 .about{
     background: #f8f8f8;
+    .lg-block({
+        text-align: center;
+    });
     &-text{
         font-family: 'Roboto Slab';
         font-weight: 400;
@@ -80,9 +83,33 @@
         }
         &__prev{
             left: 7px;
+            .xl-block({
+               left: 24px;
+            });
+            .lg-block({
+               left: 41px;
+            });
+            .md-block({
+               left: 0px;
+            });
+            .sm-block({
+               left: 14px;
+            });
         }
         &__next{
             right: 7px;
+           .xl-block({
+                right: 24px;
+            });
+           .lg-block({
+                right: 41px;
+            });
+           .md-block({
+                right: 0px;
+            });
+           .sm-block({
+                right: 14px;
+            });
         }
     }
 }

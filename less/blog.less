@@ -1,6 +1,9 @@
 .blog {
     img {
         width: 100%;
+        .xl-block({
+            height: 100%;
+        });
     }
     .row:hover &-header__date,
     .row:hover &-header__title,
@@ -15,6 +18,9 @@
         display: flex;
         align-items: center;
         margin-bottom: 23px;
+        .lg-block({
+            margin-bottom: 10px;
+        });
 
         &__date {
             width: 76px;
@@ -32,7 +38,21 @@
             transition:  0.7s;
             span {
                 font-size: 24px;
+                .sm-block({
+                    font-size: 20px;
+                });
             }
+            .lg-block({
+                width: 60px;
+                height: 60px;
+            });
+            .sm-block({
+                font-size: 12px;
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+                
+            });
         }
 
         &__title {
@@ -42,6 +62,14 @@
             margin-bottom: 19px;
             font-weight: 700;
             transition:  0.7s;
+            .lg-block({
+                font-size: 14px;
+                margin-bottom: 14px;
+            });
+            .sm-block({
+                font-size: 11px;
+                margin-bottom: 10px;
+            });
         }
 
         &__subtitle {
@@ -50,6 +78,7 @@
             font-weight: 400;
             font-size: 13px;
             color: @font-color2;
+            
             
             span {
                 color: @font-color;
@@ -65,6 +94,10 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 34px;
+        .lg-block({
+            line-height: 20px;
+            margin-bottom: 10px;
+        });
 
     }
 
@@ -80,5 +113,10 @@
         height: 2px;
         background: #ddd;
         margin: 38px 0;
+    }
+    .col-xl-7{
+        .md-block({
+           margin-top: 30px;
+        });
     }
 }

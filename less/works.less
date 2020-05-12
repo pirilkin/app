@@ -1,11 +1,23 @@
 .works {
     padding-bottom: 70px;
+    .sm-block({
+        padding-bottom: 20px;
+    });
+    .title{
+        .sm-block({
+            margin-bottom: 40px;
+        });
+    }
 
     &-btns {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 74px;
+        .sm-block({
+            flex-direction: column;
+            margin-bottom: 30px;
+        });
 
         &__btn {
             border: none;
@@ -92,6 +104,9 @@
     &__text{
         font-size: 30px;
         line-height: 44px;
+        .sm-block({
+            font-size: 20px;
+        });
     }
     &__btn{
         text-transform: uppercase;
@@ -101,6 +116,11 @@
         border: 2px solid @white;
         border-radius: 3px;
         margin-top: 55px;    
+        .sm-block({
+            font-size: 14px;
+            margin-top: 30px;
+            padding: 12px 20px;
+        });
     }
 
 }

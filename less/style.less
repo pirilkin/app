@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+header, section, footer{
+    overflow: hidden;
+}
+
+// .fixed{
+//     position: fixed !important;
+//     right: 15px;
+// }
+
 body{
     font-family: "Montserat";
     font-weight: normal;
@@ -21,6 +30,9 @@ ul{
   margin-bottom: 61px;  
   text-align: center;
   font-weight: 700;
+  .sm-block({
+    margin-bottom: 30px;
+});
   &:after{
       content: "";
       position: absolute;
@@ -39,9 +51,15 @@ ul{
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 70px;
+    .sm-block({
+        margin-bottom: 30px;
+    });
 }
 section{
     padding: 100px 0;
+    .sm-block({
+       padding: 50px 0;
+    });
 }
 
 
@@ -52,3 +70,6 @@ section{
 @import './about.less';
 @import './works.less';
 @import './blog.less';
+@import './clients.less';
+@import './contact.less';
+@import './footer.less';
